@@ -19,14 +19,18 @@ SummarizedExperiment
 pairwiseAdonis
 ape
 stringr
+
 You can install them using the following commands:
+
 install.packages(c("dplyr", "ggplot2", "reshape2", "scales", "vegan", "ggrepel", "stringr"))
 BiocManager::install(c("zCompositions", "compositions", "ANCOMBC", "phyloseq", "TreeSummarizedExperiment", "SummarizedExperiment", "pairwiseAdonis", "ape"))
 
 Usage
 Input Files
+
 Abundance Data: The abundance data in CSV format, with samples as columns and genera as rows (default: mealworm_genus.csv).
 Metadata File: Metadata for samples in CSV format (default: metadata_meal.csv).
+
 User Inputs
 Modify the following variables in the script based on your dataset:
 
@@ -50,23 +54,26 @@ Calculates Shannon, Simpson, inverse Simpson, richness, and evenness indices for
 
 PCoA (Principal Coordinates Analysis)
 The script performs PCoA using Bray-Curtis distances and displays both untransformed and CLR (Centered Log-Ratio) transformed PCoA plots:
-
 <output_prefix>_pcoa_untransformed.png
 <output_prefix>_pcoa_clr.png
+
 Statistical Analysis
 The script performs PERMANOVA for group comparisons using pairwise.adonis2 and visualizes R-squared values and Tukey HSD results. Outputs include:
 
 PERMANOVA results: <output_prefix>_combined_results_genus.txt
 R² plot: <output_prefix>_permanova_r2_plot.png
 Tukey HSD plot: <output_prefix>_tukey_hsd_plot.png
+
 Differential Abundance Testing (ANCOM-BC2)
 The script runs ANCOM-BC2 to identify differentially abundant genera across groups. The results are saved as:
 
 Pairwise results: <output_prefix>_res_pair.csv
 Differentially abundant genera: <output_prefix>_differentially_abundant_genera.csv
-Notes
+
+Notes:
 Ensure that all input files have consistent formatting and matching sample IDs between the abundance and metadata files.
 Adjust the parameters in the script based on your experimental design and requirements.
 Troubleshooting
 Data Import Issues: Verify that the file paths and names match your local files. Ensure there are no leading/trailing spaces in column names or unwanted characters.
+
 Missing Packages: Install missing packages using install.packages() or BiocManager::install() for Bioconductor packages.
