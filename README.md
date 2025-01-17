@@ -1,10 +1,11 @@
 # Metagenomics Analysis
 
-QIIME2 pipeline
+## QIIME2 pipeline
+
+QIIME2 users can refer to the entire pipeline in qiime2.sh file for smoothly running the phylogenetic analysis of amplicon data.    
 
 
-
-Microbiome Data Analysis Pipeline
+## Microbiome Data Analysis Pipeline
 This R script is designed for the analysis of microbiome data, focusing on mealworm samples. It includes multiple steps such as quality checking, data transformation, visualization, and statistical analyses including alpha diversity, PERMANOVA, and differential abundance testing using ANCOM-BC2. Article link: https://link.springer.com/article/10.1007/s00284-021-02456-2
 
 # Prerequisites
