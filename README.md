@@ -82,3 +82,8 @@ Troubleshooting
 Data Import Issues: Verify that the file paths and names match your local files. Ensure there are no leading/trailing spaces in column names or unwanted characters.
 
 Missing Packages: Install missing packages using install.packages() or BiocManager::install() for Bioconductor packages.
+
+
+Citations: 
+Qiime2 View: https://github.com/qiime2/q2view
+Qiime: https://github.com/qiime2
