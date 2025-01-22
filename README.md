@@ -2,7 +2,7 @@
 
 ## QIIME2 pipeline
 
-QIIME2 users can refer to the entire pipeline in "qiime2_commands.sh" file for smoothly running the phylogenetic analysis of amplicon data.    
+QIIME2 users can refer to the entire pipeline in the "qiime2_commands.sh" file for smoothly running the phylogenetic analysis of amplicon data. Although Qiime2 provides good alpha and beta diversity metrics, there are R packages that can provide extensive analysis.    
 
 
 ## Microbiome Data Analysis Pipeline
