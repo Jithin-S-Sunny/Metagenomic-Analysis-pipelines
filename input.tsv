@@ -1,0 +1,5 @@
+"id"	"forward-absolute-filepath"	"reverse-absolute-filepath"
+"A"	"path/to/forward/reads"	"path/to/reverse/reads"
+"B"	"path/to/forward/reads"	"path/to/reverse/reads"
+"C"	"path/to/forward/reads"	"path/to/reverse/reads"
+"D"	"path/to/forward/reads"	"path/to/reverse/reads"
