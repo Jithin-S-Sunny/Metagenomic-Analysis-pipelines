@@ -15,9 +15,9 @@ library(ape)
 library(stringr)
 
 # User input for file names
-input_file <- "mealworm_genus.csv" 
-output_prefix <- "mealworm"  
-metadata_file <- "metadata_meal.csv"
+input_file <- "sample_genus.csv" 
+output_prefix <- "sample"  
+metadata_file <- "metadata_sample.csv"
 #Checking for unwanted charachters
 check_unwanted_characters <- function(df, file_name) {
   if (any(str_detect(names(df), "^\\s+|\\s+$"))) {
