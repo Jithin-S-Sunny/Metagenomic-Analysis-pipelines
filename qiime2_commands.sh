@@ -8,7 +8,7 @@ tr ',' '\t' < metadata.csv > metadata.tsv
 awk -F',' 'NF != N {print NR, $0}' metadata.tsv
 sed 's/"//g' metadata.tsv > metadata_cleaned.tsv
 
-# Import FASTQ files and create a QIIME2 artifact
+# Import FASTQ files and create a QIIME2 artifact. The input.tsv file will be in the format as given in the file input.tsv in this directory 
 qiime tools import --type 'SampleData[PairedEndSequencesWithQuality]' --input-path input.tsv --output-path sequences.qza --input-format PairedEndFastqManifestPhred33V2
 
 # Summarize sequences and visualise all the .qzv results at https://view.qiime2.org/
