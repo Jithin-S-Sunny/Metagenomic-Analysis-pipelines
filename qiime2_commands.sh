@@ -45,5 +45,7 @@ qiime feature-classifier classify-sklearn --i-reads dada2/representative_sequenc
 # Taxa barplot
 qiime taxa barplot --i-table 16S_dada2/table.qza --i-taxonomy 16S_taxa/classification.qza --m-metadata-file metadata.tsv --o-visualization 16S_taxa/taxa_barplot.qzv
 
+#Extract ASV table
+qiime tools export --input-path table.qza --output-path bacteria_exported_feature_table
 
-
+biom convert --input-fp bacteria_exported_feature_table/feature-table.biom --output-fp bacteria_exported_feature_table/feature_table.tsv --to-tsv
