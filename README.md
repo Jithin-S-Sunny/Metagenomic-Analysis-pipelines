@@ -84,5 +84,5 @@ Missing Packages: Install missing packages using install.packages() or BiocManag
 
 
 Citations: 
-Qiime2 View: https://github.com/qiime2/q2view
-Qiime: https://github.com/qiime2
+[Qiime2 view](https://github.com/qiime2/q2view)
+[Qiime](https://github.com/qiime2)
